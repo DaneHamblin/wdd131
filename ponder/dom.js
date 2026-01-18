@@ -14,4 +14,22 @@ let list = document.querySelector('.list');
 
 list.style.border = '3px solid black';
 
-let para
+let para = document.querySelector('p');
+
+//para.style.backgroundColor = 'lightblue';
+
+para.classList.add('background');
+
+//document.querySelector('body').classList.add('background');
+
+const image = document.querySelector('img');
+image.setAttribute('src', 'images/w02.png');
+
+
+let selectElem = document.getElementById('webdevlist');
+selectElem.addEventListener('change', function(){
+    let codeValue = selectElem.value;
+    console.log(codeValue);
+    document.getElementById(codeValue).style.color = 'red';
+})
+                
